@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-parchment: #F9F7F2;
+    --bg-parchment-subtle: #F3EFE6;
+    --dark-ink: #1A1A1E;
+    --brand-blue: #004AC6;
+    --editorial-terracotta: #E55B3C;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #F9F7F2;
+    color: #191C1E;
+  }
+
+  .font-mono-data {
+    font-family: 'JetBrains Mono', monospace;
+    font-feature-settings: "tnum" 1, "zero" 1;
+  }
+
+  .font-serif-editorial {
+    font-family: 'Newsreader', 'Georgia', serif;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #D3D0C7;
+  border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #A8A49B;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+}
+.material-symbols-outlined.fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+}
+
+/* Subtle editorial paper texture & hairline dividers */
+.border-editorial {
+  border-color: rgba(26, 26, 30, 0.12);
+}
+
+.border-editorial-subtle {
+  border-color: rgba(26, 26, 30, 0.08);
+}
+
